@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的电影名单</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #6200ea;
+            color: white;
+            margin: 0;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #6200ea;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .plot {
+            max-width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .plot:hover {
+            white-space: normal;
+            overflow: visible;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的电影名单</h1>
+    <table id="movie-table">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>电影名</th>
+                <th>所属国家</th>
+                <th>语言</th>
+                <th>主演</th>
+                <th>剧情简介</th>
+                <th>观看日期</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 电影数据将在这里动态加载 -->
+        </tbody>
+    </table>
+
+    <footer>
+        <p>© 2023 我的电影名单. 版权所有.</p>
+    </footer>
+
+    <script src="movies.js"></script>
+</body>
+</html>
