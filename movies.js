@@ -3,16 +3,16 @@ const movies = [
     {
         id: 1,
         name: {
-            original: "The Shawshank Redemption",
-            chinese: "肖申克的救赎",
-            japanese: "ショーシャンクの空に",
-            english: "The Shawshank Redemption"
+            original: "Hannibal",
+            chinese: "汉尼拔",
+            japanese: "ハンニバル",
+            english: "Hannibal"
         },
         country: "美国",
         language: "英语",
-        actors: "蒂姆·罗宾斯, 摩根·弗里曼",
-        plot: "讲述了银行家安迪因冤罪入狱后，在肖申克监狱中通过智慧和毅力获得自由的故事。",
-        date: "2023-10-01"
+        actors: "麦斯米科尔森",
+        plot: "恋爱脑的食人绅士的爱情故事。",
+        date: "2025-2-28"
     },
     {
         id: 2,
