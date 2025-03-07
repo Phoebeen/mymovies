@@ -12,7 +12,8 @@ const movies = [
         language: "英语",
         actors: "麦斯米科尔森",
         plot: "恋爱脑的食人绅士的爱情故事。",
-        date: "2025-2-28"
+        date: "2025-2-28",
+        link: "https://pan.quark.cn/s/d8e7bcd5ce40"
     },
     {
         id: 2,
@@ -26,22 +27,10 @@ const movies = [
         language: "汉语",
         actors: "张国荣, 张丰毅, 巩俐",
         plot: "讲述了两位京剧演员跨越半个世纪的悲欢离合，反映了中国社会的变迁。",
-        date: "2023-09-15"
+        date: "2023-09-15",
+        link: "-"
     },
-    {
-        id: 3,
-        name: {
-            original: "Inception",
-            chinese: "盗梦空间",
-            japanese: "インセプション",
-            english: "Inception"
-        },
-        country: "美国",
-        language: "英语",
-        actors: "莱昂纳多·迪卡普里奥, 约瑟夫·高登-莱维特",
-        plot: "讲述了一群盗梦者通过潜入他人梦境来植入想法的科幻冒险故事。",
-        date: "2023-08-20"
-    }
+ 
 ];
 
 const tableBody = document.querySelector("#movie-table tbody");
@@ -82,6 +71,14 @@ movies.forEach(movie => {
     const dateCell = document.createElement("td");
     dateCell.textContent = movie.date;
     row.appendChild(dateCell);
+    
+    const linkCell = document.createElement("td");
+    const link = document.createElement("a");
+    link.href = movie.link;
+    link.textContent = "观看资源";
+    link.target = "_blank";
+    linkCell.appendChild(link);
+    row.appendChild(linkCell);
 
     tableBody.appendChild(row);
 });
