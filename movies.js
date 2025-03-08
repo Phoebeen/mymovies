@@ -21,7 +21,7 @@ const movies = [
             original: "The Silence of the Lambs(1991)",
             chinese: "沉默的羔羊",
             japanese: "羊たちの沈黙",
-            english: "Farewell My Concubine"
+            english: "The Silence of the Lambs"
         },
         country: "美国",
         language: "英语",
@@ -30,6 +30,36 @@ const movies = [
         date: "2025-03-08",
         link: "https://pan.quark.cn/s/2d4628e1893f"
     },
+    {
+        id: 3,
+        name: {
+            original: "Hannibal Rising(2007)",
+            chinese: "少年汉尼拔",
+            japanese: "ハンニバル・ライジング",
+            english: "Hannibal Rising"
+        },
+        country: "美国",
+        language: "英语",
+        actors: "[法]加斯帕德·尤利尔、巩俐、瑞斯·伊凡斯",
+        plot: "二次大战时，与少年历达相依为命的妹妹惨遭变态士兵烹杀裹腹。逃过一劫的历达后来被居于法国的叔叔收养，更遇上他生命中最重要的一个女人――叔叔神秘而美艳的日裔太太，《源氏物语》作者紫式部的后人（巩俐 饰）。历达不单从她身上学习各种知识，更加与她发生暧昧的不伦关系…直至他再次遇上那班杀妹仇人。历达决意要以肉偿肉，以血祭血，不单要赶尽杀绝，还要让他们尝尽最残酷的痛苦！潜藏的嗜血本性，亦由此苏醒……",
+        date: "2025-03-14（预定时间）",
+        link: "https://pan.quark.cn/s/bb24a59d6d0b"
+    },
+    {
+        id: 4,
+        name: {
+            original: "Druk(2020)",
+            chinese: "酒精计划",
+            japanese: "アナザーラウンド",
+            english: "ANOTHER ROUND"
+        },
+        country: "丹麦、荷兰、瑞典",
+        language: "英语",
+        actors: "麦斯·米科尔森、托马斯·博·拉森、马格努斯·米朗和拉尔斯·兰特",
+        plot: "《酒精计划》是2020年丹麦、荷兰、瑞典三国合拍的喜剧剧情片，由丹麦导演托马斯·温特伯格执导，温特伯格和托比亚斯·林道赫姆编剧，麦斯·米科尔森、托马斯·博·拉森、马格努斯·米朗和拉尔斯·兰特主演。影片讲述了四位高中老师体验烂醉的奇趣历程。",
+        date: "2025-03-19（预定时间）",
+        link: "https://pan.quark.cn/s/d95939ee4b71"
+    }
  
 ];
 
