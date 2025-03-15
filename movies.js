@@ -101,10 +101,10 @@ function renderMovies(filteredMovies, keyword = "") {
 
      const nameCell = document.createElement("td");
      nameCell.innerHTML = `
-        <strong>${movie.name.original, keyword}</strong><br>
-        <span>中文: ${movie.name.chinese, keyword}</span><br>
-        <span>日文: ${movie.name.japanese, keyword}</span><br>
-        <span>英文: ${movie.name.english, keyword}</span>
+        <strong>${highlightText(movie.name.original, keyword)}</strong><br>
+        <span>中文: ${highlightText(movie.name.chinese, keyword)}</span><br>
+        <span>日文: ${highlightText(movie.name.japanese, keyword)}</span><br>
+        <span>英文: ${highlightText(movie.name.english, keyword)}</span>
      `;
      row.appendChild(nameCell);
 
