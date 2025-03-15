@@ -79,51 +79,78 @@ const movies = [
 ];
 
 const tableBody = document.querySelector("#movie-table tbody");
+const searchInput = document.getElementById("search-input");
 
-movies.forEach(movie => {
-    const row = document.createElement("tr");
+// 渲染电影列表
+function renderMovies(filteredMovies) {
+    tableBody.innerHTML = ""; // 清空表格内容
+    
+    movies.forEach(movie => {
+     const row = document.createElement("tr");
 
-    const idCell = document.createElement("td");
-    idCell.textContent = movie.id;
-    row.appendChild(idCell);
+     const idCell = document.createElement("td");
+     idCell.textContent = movie.id;
+     row.appendChild(idCell);
 
-    const nameCell = document.createElement("td");
-    nameCell.innerHTML = `
+     const nameCell = document.createElement("td");
+     nameCell.innerHTML = `
         <strong>${movie.name.original}</strong><br>
         <span>中文: ${movie.name.chinese}</span><br>
         <span>日文: ${movie.name.japanese}</span><br>
         <span>英文: ${movie.name.english}</span>
-    `;
-    row.appendChild(nameCell);
+     `;
+     row.appendChild(nameCell);
 
-    const countryCell = document.createElement("td");
-    countryCell.textContent = movie.country;
-    row.appendChild(countryCell);
+     const countryCell = document.createElement("td");
+     countryCell.textContent = movie.country;
+     row.appendChild(countryCell);
 
-    const languageCell = document.createElement("td");
-    languageCell.textContent = movie.language;
-    row.appendChild(languageCell);
+     const languageCell = document.createElement("td");
+     languageCell.textContent = movie.language;
+     row.appendChild(languageCell);
 
-    const actorsCell = document.createElement("td");
-    actorsCell.textContent = movie.actors;
-    row.appendChild(actorsCell);
+     const actorsCell = document.createElement("td");
+     actorsCell.textContent = movie.actors;
+     row.appendChild(actorsCell);
 
-    const plotCell = document.createElement("td");
-    plotCell.className = "plot";
-    plotCell.textContent = movie.plot;
-    row.appendChild(plotCell);
+     const plotCell = document.createElement("td");
+     plotCell.className = "plot";
+     plotCell.textContent = movie.plot;
+     row.appendChild(plotCell);
 
-    const dateCell = document.createElement("td");
-    dateCell.textContent = movie.date;
-    row.appendChild(dateCell);
+     const dateCell = document.createElement("td");
+     dateCell.textContent = movie.date;
+     row.appendChild(dateCell);
     
-    const linkCell = document.createElement("td");
-    const link = document.createElement("a");
-    link.href = movie.link;
-    link.textContent = "观看资源";
-    link.target = "_blank";
-    linkCell.appendChild(link);
-    row.appendChild(linkCell);
+     const linkCell = document.createElement("td");
+     const link = document.createElement("a");
+     link.href = movie.link;
+     link.textContent = "观看资源";
+     link.target = "_blank";
+     linkCell.appendChild(link);
+     row.appendChild(linkCell);
 
-    tableBody.appendChild(row);
+     tableBody.appendChild(row);
+ });
+}
+
+// 初始化渲染所有电影
+renderMovies(movies);
+
+// 实现搜索功能
+searchInput.addEventListener("input", (event) => {
+    const searchTerm = event.target.value.toLowerCase(); // 获取搜索关键词并转为小写
+
+    const filteredMovies = movies.filter(movie => {
+        return (
+            movie.name.original.toLowerCase().includes(searchTerm) ||
+            movie.name.chinese.toLowerCase().includes(searchTerm) ||
+            movie.name.japanese.toLowerCase().includes(searchTerm) ||
+            movie.name.english.toLowerCase().includes(searchTerm) ||
+            movie.author.toLowerCase().includes(searchTerm) ||
+            movie.description.toLowerCase().includes(searchTerm)
+        );
+    });
+
+    renderMovies(filteredMovies); // 渲染过滤后的电影列表
 });
