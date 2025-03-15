@@ -155,6 +155,9 @@ searchInput.addEventListener("input", (event) => {
             movie.name.japanese.toLowerCase().includes(searchTerm) ||
             movie.name.english.toLowerCase().includes(searchTerm) ||
             movie.actors.toLowerCase().includes(searchTerm) ||
+            movie.date.toLowerCase().includes(searchTerm) ||
+            movie.country.toLowerCase().includes(searchTerm) ||
+            movie.language.toLowerCase().includes(searchTerm) ||
             movie.plot.toLowerCase().includes(searchTerm)
         );
     });
