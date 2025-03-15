@@ -81,8 +81,15 @@ const movies = [
 const tableBody = document.querySelector("#movie-table tbody");
 const searchInput = document.getElementById("search-input");
 
+// 高亮显示关键词
+function highlightText(text, keyword) {
+    if (!keyword) return text;
+    const regex = new RegExp(`(${keyword})`, "gi");
+    return text.replace(regex, '<span class="highlight">$1</span>');
+}
+
 // 渲染电影列表
-function renderMovies(filteredMovies) {
+function renderMovies(filteredMovies, keyword = "") {
     tableBody.innerHTML = ""; // 清空表格内容
     
     filteredMovies.forEach(movie => {
@@ -94,32 +101,32 @@ function renderMovies(filteredMovies) {
 
      const nameCell = document.createElement("td");
      nameCell.innerHTML = `
-        <strong>${movie.name.original}</strong><br>
-        <span>中文: ${movie.name.chinese}</span><br>
-        <span>日文: ${movie.name.japanese}</span><br>
-        <span>英文: ${movie.name.english}</span>
+        <strong>${movie.name.original, keyword}</strong><br>
+        <span>中文: ${movie.name.chinese, keyword}</span><br>
+        <span>日文: ${movie.name.japanese, keyword}</span><br>
+        <span>英文: ${movie.name.english, keyword}</span>
      `;
      row.appendChild(nameCell);
 
      const countryCell = document.createElement("td");
-     countryCell.textContent = movie.country;
+     countryCell.innerHTML = highlightText(movie.country, keyword);
      row.appendChild(countryCell);
 
      const languageCell = document.createElement("td");
-     languageCell.textContent = movie.language;
+     languageCell.innerHTML = highlightText(movie.language, keyword);
      row.appendChild(languageCell);
 
      const actorsCell = document.createElement("td");
-     actorsCell.textContent = movie.actors;
+     actorsCell.innerHTML = highlightText(movie.actors, keyword);
      row.appendChild(actorsCell);
 
      const plotCell = document.createElement("td");
      plotCell.className = "plot";
-     plotCell.textContent = movie.plot;
+     plotCell.innerHTML = highlightText(movie.plot, keyword);
      row.appendChild(plotCell);
 
      const dateCell = document.createElement("td");
-     dateCell.textContent = movie.date;
+     dateCell.innerHTML = highlightText(movie.date, keyword);
      row.appendChild(dateCell);
     
      const linkCell = document.createElement("td");
@@ -147,10 +154,10 @@ searchInput.addEventListener("input", (event) => {
             movie.name.chinese.toLowerCase().includes(searchTerm) ||
             movie.name.japanese.toLowerCase().includes(searchTerm) ||
             movie.name.english.toLowerCase().includes(searchTerm) ||
-            movie.author.toLowerCase().includes(searchTerm) ||
-            movie.description.toLowerCase().includes(searchTerm)
+            movie.actors.toLowerCase().includes(searchTerm) ||
+            movie.plot.toLowerCase().includes(searchTerm)
         );
     });
 
-    renderMovies(filteredMovies); // 渲染过滤后的电影列表
+    renderMovies(filteredMovies, searchTerm); // 渲染过滤后的电影列表
 });
