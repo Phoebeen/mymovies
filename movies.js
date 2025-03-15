@@ -131,7 +131,7 @@ function renderMovies(filteredMovies) {
      row.appendChild(linkCell);
 
      tableBody.appendChild(row);
- });
+    });
 }
 
 // 初始化渲染所有电影
