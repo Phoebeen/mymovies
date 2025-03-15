@@ -85,7 +85,7 @@ const searchInput = document.getElementById("search-input");
 function renderMovies(filteredMovies) {
     tableBody.innerHTML = ""; // 清空表格内容
     
-    movies.forEach(movie => {
+    filteredMovies.forEach(movie => {
      const row = document.createElement("tr");
 
      const idCell = document.createElement("td");
