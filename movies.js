@@ -153,6 +153,9 @@ function renderMovies(filteredMovies, keyword = "") {
      const plotCell = document.createElement("td");
      plotCell.className = "plot";
      plotCell.innerHTML = highlightText(movie.plot, keyword);
+     plotCell.addEventListener("click", () => {
+        plotCell.classList.toggle("expanded"); //切换展开、收起状态
+     });
      row.appendChild(plotCell);
 
      const dateCell = document.createElement("td");
