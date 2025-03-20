@@ -47,10 +47,11 @@
             -webkit-box-orient: vertical;
             line-height: 1.5; /* 行高 */
         }
-        .plot:hover {
-            white-space: normal;
-            overflow: visible;
+
+        .plot.expanded {
+            -webkit-line-clamp: unset; /*取消行数限制*/
         }
+       
         .highlight {
             background-color: #fff3b0; /* 高亮背景色 */
             font-weight: bold;
