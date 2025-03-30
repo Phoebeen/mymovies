@@ -94,7 +94,7 @@ const movies = [
         id: 7,
         name: {
             original: "메소드 (2017)",
-            chinese: "极限杀手",
+            chinese: "方法派",
             japanese: "メソッド",
             english: "Method"
         },
