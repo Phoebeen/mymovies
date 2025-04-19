@@ -102,7 +102,7 @@ const movies = [
         language: "英语/罗马尼亚语",
         actors: "希亚·拉博夫/埃文·蕾切尔·伍德/麦斯·米科尔森",
         plot: "查理爱上了一个漂亮女孩盖比，但盖比是黑帮老大尼格尔的老婆。为了让盖比脱离黑手党的控制与自己双宿双飞，查理以极大地勇气制造了一场混乱，谁知却让自己陷入极为不利的境地。",
-        date: "2025-04-11（预定时间）",
+        date: "2025-04-11",
         link: "https://www.rrdynb.com/movie/2020/1213/15040.html"
         
     },
@@ -118,9 +118,39 @@ const movies = [
         language: "英语/俄语",
         actors: "麦斯·米科尔森/凡妮莎·哈金斯",
         plot: "故事叙述一名杀手隐居于寒冷的郊区,以度过自己的退休生活。但贪心的雇主却找来了一群年轻的新世代杀手打算将他斩草除根，而迫使他重拾武器准备大开杀戒。",
-        date: "2025-04-18（预定时间）",
+        date: "2025-04-18",
         link: "https://www.rrdynb.com/movie/2019/0723/4571.html"
         
+    },
+    {
+        id: 9,
+        name: {
+            original: " De grønne slagtere (2003)",
+            chinese: "绿色屠夫",
+            japanese: "フレッシュ・デリ",
+            english: "The Green Butchers"
+        },
+        country: "丹麦",
+        language: "丹麦语",
+        actors: "麦斯·米科尔森/尼古拉·雷·卡斯/莱恩·克鲁斯",
+        plot: "《绿色屠夫》是一部 2003 年丹麦黑色喜剧电影，由马德斯·米克尔森、尼古拉·雷·卡斯和莱恩·克鲁斯主演，由安诺斯•托马斯•延森编剧和导演。电影讲述了两个屠夫 Svend “Sweat” 和 Bjarne，他们为了摆脱傲慢的老板而开办了自己的商店。后来，他们为了提高生意率而开始制作人肉香肠。",
+        date: "2025-04-25（预定）",
+        link: "https://www.rrdynb.com/movie/2020/0109/7602.html"
+    },
+    {
+        id: 10,
+        name: {
+            original: "Casino Royale(2006)",
+            chinese: "007：大战皇家赌场",
+            japanese: "007/カジノ・ロワイヤル",
+            english: "Casino Royale"
+        },
+        country: "美国/英国/德国/捷克/巴哈马",
+        language: "英语",
+        actors: "丹尼尔·克雷格/伊娃·格林/麦斯米科尔森",
+        plot: "-",
+        date: "2025-04-27（预定）",
+        link: "https://www.rrdynb.com/movie/2019/0827/5163.html"
     },
     {
         id: 0,
