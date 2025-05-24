@@ -122,23 +122,9 @@ const movies = [
         link: "https://www.rrdynb.com/movie/2019/0723/4571.html"
         
     },
+
     {
         id: 9,
-        name: {
-            original: " De grønne slagtere (2003)",
-            chinese: "绿色屠夫",
-            japanese: "フレッシュ・デリ",
-            english: "The Green Butchers"
-        },
-        country: "丹麦",
-        language: "丹麦语",
-        actors: "麦斯·米科尔森/尼古拉·雷·卡斯/莱恩·克鲁斯",
-        plot: "《绿色屠夫》是一部 2003 年丹麦黑色喜剧电影，由马德斯·米克尔森、尼古拉·雷·卡斯和莱恩·克鲁斯主演，由安诺斯•托马斯•延森编剧和导演。电影讲述了两个屠夫 Svend “Sweat” 和 Bjarne，他们为了摆脱傲慢的老板而开办了自己的商店。后来，他们为了提高生意率而开始制作人肉香肠。",
-        date: "2025-04-25（预定）",
-        link: "https://www.rrdynb.com/movie/2020/0109/7602.html"
-    },
-    {
-        id: 10,
         name: {
             original: "Casino Royale(2006)",
             chinese: "007：大战皇家赌场",
@@ -149,9 +135,55 @@ const movies = [
         language: "英语",
         actors: "丹尼尔·克雷格/伊娃·格林/麦斯米科尔森",
         plot: "-",
-        date: "2025-04-27（预定）",
+        date: "2025-04-27",
         link: "https://www.rrdynb.com/movie/2019/0827/5163.html"
     },
+    {
+        id: 10,
+        name: {
+            original: "De grønne slagtere (2003)",
+            chinese: "绿色屠夫",
+            japanese: "フレッシュ・デリ",
+            english: "The Green Butchers"
+        },
+        country: "丹麦",
+        language: "丹麦语",
+        actors: "麦斯·米科尔森/尼古拉·雷·卡斯/莱恩·克鲁斯",
+        plot: "《绿色屠夫》是一部 2003 年丹麦黑色喜剧电影，由马德斯·米克尔森、尼古拉·雷·卡斯和莱恩·克鲁斯主演，由安诺斯•托马斯•延森编剧和导演。电影讲述了两个屠夫 Svend “Sweat” 和 Bjarne，他们为了摆脱傲慢的老板而开办了自己的商店。后来，他们为了提高生意率而开始制作人肉香肠。",
+        date: "2025-05-9",
+        link: "https://www.rrdynb.com/movie/2020/0109/7602.html"
+    },
+    {
+        id: 11,
+        name: {
+            original: "Retfærdighedens ryttere (2020)",
+            chinese: "正义骑士",
+            japanese: "ライダーズ・オブ・ジャスティス",
+            english: "Riders of Justice"
+        },
+        country: "丹麦",
+        language: "丹麦语",
+        actors: "麦斯·米科尔森/尼古拉·雷·卡斯/尼可拉斯·布若",
+        plot: "故事讲述马库斯的妻子在一场悲剧的火车事故中身亡，马库斯要赶回家陪女儿玛蒂尔德。这场事故似乎是一场意外，但一位数学极客，也是火车中的一位乘客，与他的两个同事现身，说出他们确信这场事故背后另有隐情。",
+        date: "2025-05-22",
+        link: "https://www.rrdynb.com/movie/2021/0526/18080.html"
+    },
+    {
+        id: 12,
+        name: {
+            original: "Blinkende lygter (2000)",
+            chinese: "闪烁恶人心",
+            japanese: "-",
+            english: "Flickering Lights"
+        },
+        country: "丹麦/瑞典",
+        language: "丹麦语",
+        actors: "麦斯·米科尔森",
+        plot: "丹麦第一神（经）编剧安诺斯托马斯延森和美剧《汉尼拔》扮演者麦斯米科尔森早期电影，两人05年合拍神片《亚当的苹果》 还合作过好多黑色喜剧，本片讲四个黑帮分子偷老大的巨款开餐馆且各自回忆童年，充满荒诞和丹麦式冷幽默，结局（看起来）相当治愈，世纪之交的北欧出了好多黑色喜剧，当时丹麦第一神（经）编剧的功力已现端倪，那时麥叔还没成为汉尼拔，居然演了个背心暴力男......",
+        date: "2025-05-30（预定）",
+        link: "https://pan.baidu.com/s/16wahRgyjFU1AGq1124vnyA?pwd=mads"
+    },
+
     {
         id: 0,
         name: {
