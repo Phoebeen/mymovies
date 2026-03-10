@@ -174,7 +174,7 @@ const movies = [
             original: "Pusher (1996)",
             chinese: "末路狂奔",
             japanese: "プッシャー",
-            english: "Flickering Lights"
+            english: "Pusher"
         },
         country: "丹麦",
         language: "丹麦语 / 瑞典语 / 塞尔维亚-克罗地亚语",
