@@ -171,6 +171,36 @@ const movies = [
     {
         id: 12,
         name: {
+            original: "",
+            chinese: "初恋这件小事",
+            japanese: "",
+            english: ""
+        },
+        country: "泰国",
+        language: "泰语",
+        actors: "",
+        plot: "",
+        date: "2025-10-17",
+        link: ""
+    },
+    {
+        id: 13,
+        name: {
+            original: "",
+            chinese: "亚当的苹果",
+            japanese: "",
+            english: ""
+        },
+        country: "丹麦",
+        language: "丹麦语",
+        actors: "",
+        plot: "",
+        date: "2025-11-15",
+        link: ""
+    },
+    {
+        id: 14,
+        name: {
             original: "Pusher (1996)",
             chinese: "末路狂奔",
             japanese: "プッシャー",
