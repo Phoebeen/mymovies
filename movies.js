@@ -218,15 +218,15 @@ const movies = [
         name: {
             original: "Efter brylluppet(2006)",
             chinese: "婚礼之后",
-            japanese: "アフター・ウェディング“,
-            english: "After the Wedding“
+            japanese: "アフター・ウェディング",
+            english: "After the Wedding"
         },
         country: "丹麦 / 瑞典 / 英国 / 挪威",
-        language: ““，
-        actors: "“，
-        plot: "“，
-        date: "2026-03-20”，
-        link: "https://www.rrdynb.com/zongyi/2022/0413/25507.html“
+        language: "",
+        actors: "",
+        plot: "",
+        date: "2026-03-20",
+        link: "https://www.rrdynb.com/zongyi/2022/0413/25507.html"
     },
     {
         id: 0,
