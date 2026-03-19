@@ -218,7 +218,7 @@ const movies = [
         name: {
             original: "Efter brylluppet(2006)",
             chinese: "婚礼之后",
-            japanese: "アフター・ウェディング“，
+            japanese: "アフター・ウェディング“,
             english: "After the Wedding“
         },
         country: "丹麦 / 瑞典 / 英国 / 挪威",
