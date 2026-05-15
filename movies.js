@@ -216,6 +216,51 @@ const movies = [
     {
         id: 15,
         name: {
+            original: "",
+            chinese: "边境杀手",
+            japanese: "",
+            english: ""
+        },
+        country: "美国",
+        language: "英语 / 西班牙",
+        actors: "",
+        plot: "",
+        date: "2026-04-24",
+        link: "https://www.rrdynb.com/movie/2020/0505/10195.html"
+    },
+    {
+        id: 16,
+        name: {
+            original: "",
+            chinese: "边境杀手2",
+            japanese: "",
+            english: ""
+        },
+        country: "美国",
+        language: "英语 / 西班牙",
+        actors: "",
+        plot: "",
+        date: "2026-04-26",
+        link: "https://www.rrdynb.com/movie/2018/1109/222.html"
+    },
+    {
+        id: 17,
+        name: {
+            original: "",
+            chinese: "疯狂麦克斯4",
+            japanese: "",
+            english: ""
+        },
+        country: "美国",
+        language: "英语",
+        actors: "",
+        plot: "",
+        date: "2026-05-08",
+        link: ""
+    },
+    {
+        id: 18,
+        name: {
             original: "Efter brylluppet(2006)",
             chinese: "婚礼之后",
             japanese: "アフター・ウェディング",
@@ -225,7 +270,7 @@ const movies = [
         language: "",
         actors: "",
         plot: "",
-        date: "2026-03-20",
+        date: "2026-05-16",
         link: "https://www.rrdynb.com/zongyi/2022/0413/25507.html"
     },
     {
